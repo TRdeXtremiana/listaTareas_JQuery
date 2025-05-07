@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+        <div id="nuevaTarea">
+            <input type="text" id="input" placeholder="Nueva tarea">
+            <select id="prioridad">
+                <option value="alta">Alta</option>
+                <option value="media" selected>Media</option>
+                <option value="baja">Baja</option>
+            </select>
+            <button id="añadirTarea">Agregar</button>
+        </div>
+        <div class="bloques-tareas">
+            <div class="bloque pendiente">
+                <h2>Pendientes</h2>
+                <ul id="tareasPendientes" class="lista-sortable"></ul>
+            </div>
+            <div class="bloque completada">
+                <h2>Completadas</h2>
+                <ul id="tareasCompletadas" class="lista-sortable"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
